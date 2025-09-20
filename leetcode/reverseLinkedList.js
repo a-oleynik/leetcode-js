@@ -1,11 +1,13 @@
 /**
  * Definition for singly-linked list.
- * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
- * }
  */
+function ListNode(val, next) {
+  this.val = (val===undefined ? 0 : val)
+  this.next = (next===undefined ? null : next)
+}
+
 /**
+ * Iterative with two pointers (prev, curr)
  * @param {ListNode} head
  * @return {ListNode}
  */
@@ -40,11 +42,6 @@ function testReverseList() {
     console.log(`reverseList: ${JSON.stringify(resultArr)} (Expected: ${JSON.stringify(expected)})`);
     console.log('---');
   });
-}
-
-function ListNode(val, next) {
-  this.val = (val===undefined ? 0 : val)
-  this.next = (next===undefined ? null : next)
 }
 
 function createLinkedList(arr) {
